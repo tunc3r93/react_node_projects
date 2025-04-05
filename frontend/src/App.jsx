@@ -2,16 +2,15 @@ import { useState } from 'react'
 import './App.css'
 import LoginPage from './pages/Auth/LoginPage';
 import Navbar from './components//Navbar';
-import Graph from './components/Graph';
+import MainContent from "./components/MainContent.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Navbar />
-        <Graph />
-      <LoginPage />
+        <div className="app">
+            <Navbar />
+            <MainContent />
+        </div>
     </>
   )
 }
